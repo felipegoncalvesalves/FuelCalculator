@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="presentation.MainActivity"
+    android:orientation="horizontal">
+
+    <include layout="@layout/toolbar" />
+
+    <ImageView
+        android:layout_width="142dp"
+        android:layout_height="131dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/img1" />
+
+    <Button
+        android:id="@+id/comparar"
+        android:backgroundTint="@color/replyorange"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/butoon"
+        style="@style/Butoon"
+        android:layout_marginTop="250dp"
+        android:text="COMPARAR" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img2"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:id="@+id/calcular"
+        android:backgroundTint="@color/replyorange"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="515dp"
+        android:text="CALCULAR"
+        android:background="@drawable/butoon"
+        style="@style/Butoon"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

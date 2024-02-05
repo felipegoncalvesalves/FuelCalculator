@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="presentation.Comparador">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compare a melhor opçao"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@color/gris"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Preço do Litro?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp" />
+
+    <EditText
+        android:id="@+id/alcool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:maxLines="5"
+        android:layout_marginStart="50dp"
+        android:inputType="numberDecimal"
+        android:hint="Alcool R$"/>
+
+    <EditText
+        android:id="@+id/gasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:maxLines="5"
+        android:layout_marginStart="250dp"
+        android:inputType="numberDecimal"
+        android:hint="Gasolina R$"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:text="Km por Litro?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"/>
+
+    <EditText
+        android:id="@+id/km_alcool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:maxLines="5"
+        android:layout_marginStart="50dp"
+        android:inputType="numberDecimal"
+        android:hint="Km/L Alcool"/>
+
+    <EditText
+        android:id="@+id/km_gasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:maxLines="5"
+        android:layout_marginStart="250dp"
+        android:inputType="numberDecimal"
+        android:hint="Km/L Gasolina"/>
+
+
+    <ImageView
+        android:layout_width="185dp"
+        android:layout_height="192dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"
+        android:src="@drawable/img3" />
+
+    <Button
+        android:id="@+id/btn_comparar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="COMPARAR"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/butoon"
+        style="@style/Butoon"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

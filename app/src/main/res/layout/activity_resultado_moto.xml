@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="presentation.Resultado_carro">
+
+    <TextView
+        android:id="@+id/tv_distancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Para a distancia de "/>
+
+    <TextView
+        android:id="@+id/tv_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:maxLength="4"
+        android:layout_marginStart="250dp"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        android:text="km "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginStart="320dp"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Km "/>
+
+    <TextView
+        android:id="@+id/tv_litros"
+        android:layout_below="@+id/tv_distancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:text="Voce vai precisar de   "/>
+
+    <TextView
+        android:id="@+id/tv_lts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_distancia"
+        android:textSize="18sp"
+        android:maxLength="4"
+        android:layout_marginStart="250dp"
+        android:padding="16dp"
+        android:text="lts"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_distancia"
+        android:textSize="18sp"
+        android:layout_marginStart="320dp"
+        android:padding="16dp"
+        android:text="Litros"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_preço"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:maxLength="5"
+        android:layout_below="@+id/tv_litros"
+        android:layout_marginStart="320dp"
+        android:padding="16dp"
+        android:text="R$ "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@+id/tv_litros"
+        android:layout_marginStart="250dp"
+        android:padding="16dp"
+        android:text="R$"/>
+
+    <TextView
+        android:id="@+id/tv_valor"
+        android:layout_below="@+id/tv_litros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:text="O gasto total será de  " />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img5"
+        android:layout_marginStart="140dp"
+        android:layout_below="@id/tv_valor"
+        android:layout_marginTop="200dp"/>
+
+
+
+
+
+</RelativeLayout>
