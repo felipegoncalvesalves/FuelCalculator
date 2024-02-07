@@ -36,35 +36,29 @@ class Cal_carroFragment : Fragment() {
             val preço = edtpreço.text.toString()
             val pessoas = edtpessoas.text.toString()
 
+                viewModel.calcularResultados(consumo, distancia, preço, pessoas)
+                viewModel.camposPreenchidos.observe(viewLifecycleOwner, { camposPreenchidos ->
+                    if (camposPreenchidos) {
 
-            viewModel.calcularResultados(consumo, distancia, preço, pessoas)
-
-            val intent = Intent(requireContext(), Resultado_carro::class.java)
-
-            viewModel.camposPreenchidos.observe(viewLifecycleOwner, { camposPreenchidos ->
-                if (camposPreenchidos) {
-
-                    viewModel.resultadoDistancia.observe(viewLifecycleOwner, { resultadoDistancia ->
-                        intent.putExtra("DISTANCIA", resultadoDistancia)
-                    })
-
+                viewModel.resultadoDistancia.observe(viewLifecycleOwner, { resultadoDistancia ->
                     viewModel.resultadoConsumo.observe(viewLifecycleOwner, { resultadoConsumo ->
-                        intent.putExtra("EXTRA_RESULT_CARRO", resultadoConsumo)
+                        viewModel.resultadoPessoas.observe(viewLifecycleOwner, { resultadoPessoas ->
+                            viewModel.resultadoLitros.observe(viewLifecycleOwner, { resultadoLitros ->
+                                val intent = Intent(requireContext(), Resultado_carro::class.java).apply {
+                                    putExtra("DISTANCIA", resultadoDistancia)
+                                    putExtra("EXTRA_RESULT_CARRO", resultadoConsumo)
+                                    putExtra("EXTRA_RESULT_PESSOAS", resultadoPessoas)
+                                    putExtra("EXTRA_RESULT_LITROS", resultadoLitros)
+                                }
+                                startActivity(intent)
+                            })
+                        })
                     })
-
-                    viewModel.resultadoPessoas.observe(viewLifecycleOwner, { resultadoPessoas ->
-                        intent.putExtra("EXTRA_RESULT_PESSOAS", resultadoPessoas)
-                    })
-
-                    viewModel.resultadoLitros.observe(viewLifecycleOwner, { resultadoLitros ->
-                        intent.putExtra("EXTRA_RESULT_LITROS", resultadoLitros)
-                    })
-
-                    startActivity(intent)
-                } else {
-                    Toast.makeText(requireContext(), "Preencha todos os campos", Toast.LENGTH_SHORT).show()
-                }
-            })
+                })
+            } else {
+                Toast.makeText(requireContext(), "Preencha todos os campos", Toast.LENGTH_SHORT).show()
+                    }
+                })
         }
 
         return view_carro

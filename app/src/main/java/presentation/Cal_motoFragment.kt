@@ -32,31 +32,30 @@ class Cal_motoFragment : Fragment() {
             val consumo = edtconsumo.text.toString()
             val distancia = edtdistancia.text.toString()
             val preço = edtpreço.text.toString()
-            val pessoa = edtpreço.text.toString()
-            val distanciaFloat = distancia.toFloat()
+            val pessoas = edtpreço.text.toString()
 
-            viewModel.calcularResultados(consumo, distancia, preço, pessoa)
-
-            val intent = Intent(requireContext(), Resultado_moto::class.java)
-                intent.putExtra("DISTANCIA", distanciaFloat)
-
+            viewModel.calcularResultados(consumo, distancia, preço, pessoas)
             viewModel.camposPreenchidos.observe(viewLifecycleOwner, { camposPreenchidos ->
-                    if (!camposPreenchidos) {
-                        Toast.makeText(requireContext(), "Preencha todos os campos", Toast.LENGTH_SHORT).show()
-                    }
-                })
-            viewModel.resultadoConsumo.observe(viewLifecycleOwner, { resultadoConsumo ->
-                intent.putExtra("EXTRA_RESULT", resultadoConsumo)
-            })
-            viewModel.resultadoPessoas.observe(viewLifecycleOwner, { resultadoPessoas ->
-                intent.putExtra("EXTRA_RESULT_PESSOAS", resultadoPessoas)
-            })
-            viewModel.resultadoLitros.observe(viewLifecycleOwner, {resultadoLitros ->
-                intent.putExtra("LITROS", resultadoLitros)
-            })
+                if (camposPreenchidos) {
 
-            startActivity(intent)
+                    viewModel.resultadoDistancia.observe(viewLifecycleOwner, { resultadoDistancia ->
+                        viewModel.resultadoConsumo.observe(viewLifecycleOwner, { resultadoConsumo ->
+                                viewModel.resultadoLitros.observe(viewLifecycleOwner, { resultadoLitros ->
+                                    val intent = Intent(requireContext(), Resultado_moto::class.java).apply {
+                                        putExtra("EXTRA_RESULT", resultadoConsumo)
+                                        putExtra("LITROS", resultadoLitros)
+                                        putExtra("DISTANCIA", resultadoDistancia)
 
+                                    }
+                                      startActivity(intent)
+                                })
+                            })
+                        })
+
+                } else {
+                    Toast.makeText(requireContext(), "Preencha todos os campos", Toast.LENGTH_SHORT).show()
+                }
+            })
         }
         return view_moto
     }

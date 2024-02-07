@@ -6,7 +6,7 @@
         <item name="colorPrimary">@color/replyorange</item>
         <item name="colorPrimaryVariant">@color/pink_500</item>
         <item name="colorOnPrimary">@color/white</item>
-        <item name="android:statusBarColor">@color/gris</item>
+        <item name="android:statusBarColor">@color/replyorange</item>
         <!-- Customize your theme here. -->
     </style>
 

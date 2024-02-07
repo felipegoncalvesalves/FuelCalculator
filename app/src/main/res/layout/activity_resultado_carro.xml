@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:padding="16dp"
-        android:text="Para a distancia de "
+        android:text="Para a distância de "
         android:textSize="18sp" />
 
     <TextView
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_distancia"
         android:padding="16dp"
-        android:text="Voce vai precisar de   "
+        android:text="Você  vai precisar de   "
         android:textSize="18sp" />
 
     <TextView

@@ -3,9 +3,11 @@
 
     <item
         android:id="@+id/carro"
-        android:title="Carro" />
+        android:title="Carro"
+        />
 
     <item
         android:id="@+id/moto"
-        android:title="Moto"/>
+        android:title="Moto"
+        />
 </menu>

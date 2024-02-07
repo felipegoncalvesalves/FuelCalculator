@@ -15,7 +15,7 @@
         android:textSize="18sp"
         android:padding="16dp"
         android:layout_marginTop="10dp"
-        android:text="Para a distancia de "/>
+        android:text="Para a distância de "/>
 
     <TextView
         android:id="@+id/tv_km"
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:textSize="18sp"
-        android:text="Voce vai precisar de   "/>
+        android:text="Você  vai precisar de   "/>
 
     <TextView
         android:id="@+id/tv_lts"
