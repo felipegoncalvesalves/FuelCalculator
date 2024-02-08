@@ -3,5 +3,23 @@
     <style name="Base.Theme.FuelCalculatorTest" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/replyorange</item>
+        <item name="colorPrimaryVariant">@color/pink_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textColor">@color/text_noturno</item>
+        <item name="android:statusBarColor">@color/replyorange</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppThemeWithActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/replyorange</item>
+    </style>
+
+    <style name="Theme.FuelCalculatorTest" parent="Base.Theme.FuelCalculatorTest" />
+
+    <style name="Butoon">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>

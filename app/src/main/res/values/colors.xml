@@ -11,4 +11,6 @@
     <color name="brown_700">#FF654544</color>
     <color name="amarelo">#FFDE59</color>
     <color name="orange">#ffc77d</color>
+    <color name="text_noturno">#FF000000</color>
+
 </resources>

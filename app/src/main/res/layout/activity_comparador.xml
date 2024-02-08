@@ -32,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
         android:maxLines="5"
+        android:textColor="@color/gris"
         android:layout_marginStart="50dp"
         android:inputType="numberDecimal"
         android:hint="Alcool R$"/>
@@ -40,6 +41,7 @@
         android:id="@+id/gasolina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/gris"
         android:layout_marginTop="120dp"
         android:maxLines="5"
         android:layout_marginStart="250dp"
@@ -62,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="240dp"
         android:maxLines="5"
+        android:textColor="@color/gris"
         android:layout_marginStart="50dp"
         android:inputType="numberDecimal"
         android:hint="Km/L Alcool"/>
@@ -72,6 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="240dp"
         android:maxLines="5"
+        android:textColor="@color/gris"
         android:layout_marginStart="250dp"
         android:inputType="numberDecimal"
         android:hint="Km/L Gasolina"/>
