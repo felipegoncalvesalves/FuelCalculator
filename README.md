@@ -1,6 +1,6 @@
 # Fuel Calculator
 
-O app Fuel é um aplicativo feito para facilitar o planejamento de viagens, oferecendo funções para calcular os gastos de combustível com precisão. Além disso, permite comparar entre álcool e gasolina, garantindo a melhor escolha e mais econômica em cada jornada.
+O aplicativo Fuel Calculator foi desenvolvido para facilitar o planejamento de viagens, oferecendo funções para calcular os gastos de combustível com precisão. Além disso, permite comparar entre álcool e gasolina, garantindo a melhor escolha e mais econômica em cada jornada.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
@@ -9,17 +9,21 @@ O app Fuel é um aplicativo feito para facilitar o planejamento de viagens, ofer
 
 ## Tecnologias
 * Kotlin
-* Activity para host de telas
+* Activity e Fragment para host de telas
+* LiveData
 * ViewGroup
     * RelativeLayout
-    * ScrollView
     * LinearLayout
+    * SplashScreen
+    * ViewModel
 - Components de UI
     - TextView
     - EditText
     - ImageView
-    - Imageview
+    - Toolbar
+    - Menu select
     - Button
+    - BottomNavigationView
     - ActivityHomeBinding
 - Toast para display de mensagens
 - Intent Explicita para abrir a segunda Activity
@@ -29,7 +33,7 @@ O app Fuel é um aplicativo feito para facilitar o planejamento de viagens, ofer
 
 ### TODO
 - Melhorar estilização do app
-- Fazer integraçao com banco de dados
+- Adicionar Gps
 
 ## Author
 Felipe Gonçalves Alves 
