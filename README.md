@@ -4,7 +4,7 @@ O app Fuel é um aplicativo feito para facilitar o planejamento de viagens, ofer
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="/result/Screenshot_1.png" width="260">&emsp;<img src="/result/Screenshot_2.png" width="260">&emsp;<img src="/result/Screenshot_3.png" width="260">
+<img src="/result/Screenshot_1.png" width="195">&emsp;<img src="/result/Screenshot_2.png" width="195">&emsp;<img src="/result/Screenshot_3.png" width="195"><img src="/result/Screenshot_4.png" width="195">
 
 
 ## Tecnologias
